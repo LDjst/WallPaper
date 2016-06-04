@@ -116,6 +116,7 @@ public class Item_more_adv extends LinearLayout {
         pager.setAdapter(adapter);
     }
 
+
     private void initRadio() {
         for (int i = 0; i < moreList.size() / 2; i++) {
             RadioButton rb = new RadioButton(context);
