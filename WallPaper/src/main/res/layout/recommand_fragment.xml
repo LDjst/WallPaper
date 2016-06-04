@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/topicName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navigation_height"
+            android:gravity="center"
+            android:text="壁纸精选"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#8ff261" />
+    <!--app:tabIndicatorColor 设置选中的标签色-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

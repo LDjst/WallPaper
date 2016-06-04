@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff2">
+
+    <LinearLayout
+        android:id="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/topicName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navigation_height"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@id/dividerline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/topbar"
+        android:background="@color/darkgrey" />
+
+    <ScrollView
+        android:id="@id/settt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dividerline">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:id="@id/my"
+                style="@style/TableView"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@id/mycollection"
+                    style="@style/TableViewCell"
+                    android:onClick="OnClick"
+                    android:background="#fff">
+
+                    <TextView
+                        style="@style/TableViewCellLabel"
+                        android:text="我的收藏"
+                       />
+
+                    <ImageButton style="@style/TableViewCellArrow" />
+                </RelativeLayout>
+
+                <View style="@style/TableViewCellDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/mydownload"
+                    style="@style/TableViewCell"
+                    android:onClick="OnClick"
+                    android:background="#fff">
+
+                    <TextView
+                        style="@style/TableViewCellLabel"
+                        android:text="我的下载" />
+
+                    <ImageButton style="@style/TableViewCellArrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/set"
+                style="@style/TableView"
+                android:layout_below="@id/my"
+                android:layout_marginTop="5.0dip"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/recommand"
+                    style="@style/TableViewCell"
+                    android:onClick="OnClick"
+                    android:background="#fff">
+
+                    <TextView
+                        style="@style/TableViewCellLabel"
+                        android:text="推荐给好友" />
+
+                    <ImageButton style="@style/TableViewCellArrow" />
+                </RelativeLayout>
+
+                <View style="@style/TableViewCellDivider" />
+
+                <RelativeLayout
+                    android:id="@id/evaluation"
+                    style="@style/TableViewCell"
+                    android:onClick="OnClick"
+                    android:background="#fff">
+
+                    <TextView
+                        style="@style/TableViewCellLabel"
+                        android:text="给个好评" />
+
+                    <ImageButton style="@style/TableViewCellArrow" />
+                </RelativeLayout>
+
+                <View style="@style/TableViewCellDivider" />
+
+                <RelativeLayout
+                    android:id="@id/settings"
+                    style="@style/TableViewCell"
+                    android:onClick="OnClick"
+                    android:background="#fff">
+
+                    <TextView
+                        style="@style/TableViewCellLabel"
+                        android:text="设置" />
+
+                    <ImageButton style="@style/TableViewCellArrow" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

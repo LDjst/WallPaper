@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="topbar">false</item>
+    <item type="id" name="topicName">false</item>
+    <item type="id" name="dividerline">false</item>
+    <item type="id" name="my">false</item>
+    <item type="id" name="mycollection">false</item>
+    <item type="id" name="mydownload">false</item>
+    <item type="id" name="set">false</item>
+    <item type="id" name="recommand">false</item>
+    <item type="id" name="evaluation">false</item>
+    <item type="id" name="settings">false</item>
+    <item type="id" name="settt">false</item>
+    <item type="id" name="divider">false</item>
+    <item type="id" name="content_layout">false</item>
+    <item type="id" name="category_listView">false</item>
+    <item type="id" name="categoryPic">false</item>
+    <item type="id" name="picCategoryName">false</item>
+    <item type="id" name="descWords">false</item>
+</resources>
