@@ -54,6 +54,6 @@ public class Search_PagerAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        container.removeView((View) object);
+        container.removeView(pagerList.get(position%pagerList.size()));
     }
 }

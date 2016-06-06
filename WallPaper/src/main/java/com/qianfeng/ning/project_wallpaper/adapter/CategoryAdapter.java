@@ -8,7 +8,9 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 import com.qianfeng.ning.project_wallpaper.R;
 import com.qianfeng.ning.project_wallpaper.bean.Category_Bean;
 import com.qianfeng.ning.project_wallpaper.utils.Url_utils;
@@ -63,6 +65,9 @@ public class CategoryAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        new DisplayImageOptions.Builder()
+                .displayer(new RoundedBitmapDisplayer(14))
+        .build();
         ViewHolder holder;
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.item_category, null);
@@ -78,7 +83,9 @@ public class CategoryAdapter extends BaseAdapter {
 //        holder.imageView.setImageURI(list.setCategoryPic());
         //通过imageLoader对象调用displayImage方法设置iv显示图片
 //        loader.displayImage(Url_utils.CATEGORY_BASEURL, holder.imageView);
-        loader.displayImage(list.getCategoryPic(),holder.imageView);
+
+        loader.displayImage(list.getCategoryPic(),holder.imageView, new DisplayImageOptions.Builder()
+                .displayer(new RoundedBitmapDisplayer(14)).build());
         return convertView;
     }
 

@@ -7,14 +7,14 @@
     <ImageView
         android:id="@+id/pager_iv1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_weight="1"
         android:src="@mipmap/ic_launcher" />
 
     <ImageView
         android:id="@+id/pager_iv2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_weight="1"
         android:src="@mipmap/ic_launcher" />
 </LinearLayout>

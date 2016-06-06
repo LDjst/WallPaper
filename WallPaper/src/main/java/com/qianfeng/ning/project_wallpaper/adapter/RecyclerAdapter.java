@@ -1,12 +1,17 @@
 package com.qianfeng.ning.project_wallpaper.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 import com.qianfeng.ning.project_wallpaper.R;
 import com.qianfeng.ning.project_wallpaper.bean.Recomm_Bean;
 
@@ -48,10 +53,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Myhold
     @Override
     public void onBindViewHolder(Myholder holder, int position) {
         //获取原有的layoutParam对象
-        RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) holder.itemView.getLayoutParams();
-        params.height = list_height.get(position);
-
-        holder.itemView.setLayoutParams(params);
+//        RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) holder.itemView.getLayoutParams();
+//        params.height = list_height.get(position);
+//        holder.itemView.setLayoutParams(params);
         loader.displayImage(data.get(position).getWallPaperMiddle(),holder.iv);
     }
 

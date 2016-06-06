@@ -106,8 +106,8 @@ public class Item_more_adv extends LinearLayout {
 //                        }
 //                        break;
 //                }
-
-            }
+//
+           }
         });
     }
 
@@ -115,7 +115,6 @@ public class Item_more_adv extends LinearLayout {
         adapter = new Search_PagerAdapter(context);
         pager.setAdapter(adapter);
     }
-
 
     private void initRadio() {
         for (int i = 0; i < moreList.size() / 2; i++) {
@@ -161,3 +160,4 @@ public class Item_more_adv extends LinearLayout {
         startSelect();
     }
 }
+

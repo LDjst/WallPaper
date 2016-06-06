@@ -19,21 +19,21 @@
         <ImageView
             android:id="@+id/iv_left"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_weight="1"
             android:src="@mipmap/ic_launcher" />
 
         <ImageView
             android:id="@+id/iv_middle"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_weight="1"
             android:src="@mipmap/ic_launcher" />
 
         <ImageView
             android:id="@+id/iv_right"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_weight="1"
             android:src="@mipmap/ic_launcher" />
 

@@ -3,6 +3,8 @@ package com.qianfeng.ning.project_wallpaper.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
@@ -62,7 +64,8 @@ public class BaseFragment extends Fragment {
         /*设置布局管理器，作用是设置recycleView要显示的效果，有3种效果
          分别是瀑布流效果，listView和gridView。*/
 
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
+//        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),3));
         loader = ((MyApp) getActivity().getApplication()).getLoader();
         //设置要显示的数据源
         initData();
