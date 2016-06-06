@@ -11,5 +11,10 @@
         android:id="@+id/item_imageView"
         android:src="@mipmap/ic_launcher"
         android:layout_width="match_parent"
-        android:layout_height="210dp" />
+        android:layout_height="210dp"
+
+        />
 </LinearLayout>
+
+<!-- android:layout_height="210dp"
+ android:background="@color/darkgrey"-->

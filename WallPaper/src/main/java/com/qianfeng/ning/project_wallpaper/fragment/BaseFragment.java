@@ -98,7 +98,7 @@ public class BaseFragment extends Fragment {
                         Log.i(TAG, "onResponse: basefragment" + data.toString());
                         list.addAll(data);
 //                      adapter.updateList(data);
-                        initHeightData();
+//                        initHeightData();
                         adapter.notifyDataSetChanged();
 
                     }

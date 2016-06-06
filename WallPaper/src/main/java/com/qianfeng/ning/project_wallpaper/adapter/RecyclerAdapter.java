@@ -55,6 +55,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Myhold
         //获取原有的layoutParam对象
 //        RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) holder.itemView.getLayoutParams();
 //        params.height = list_height.get(position);
+//        params.width = context.getResources().getDisplayMetrics().widthPixels/3;
 //        holder.itemView.setLayoutParams(params);
         loader.displayImage(data.get(position).getWallPaperMiddle(),holder.iv);
     }
